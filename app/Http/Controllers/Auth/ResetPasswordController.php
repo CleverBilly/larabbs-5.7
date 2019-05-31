@@ -36,4 +36,16 @@ class ResetPasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+    /**
+     * [sendResetResponse description]
+     * @param  Request $request  [description]
+     * @param  [type]  $response [description]
+     * @return [type]            [description]
+     */
+    protected function sendResetResponse(Request $request, $response)
+    {
+        session()->flash('success', '密码更新成功，您已成功登录！');
+        return redirect($this->redirectPath());
+    }
 }
