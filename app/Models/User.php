@@ -12,6 +12,7 @@ use Auth;
 
 class User extends Authenticatable implements MustVerifyEmailContract
 {
+    use Traits\ActiveUserHelper;
     use MustVerifyEmailTrait;
     use HasRoles;
     use Notifiable {
