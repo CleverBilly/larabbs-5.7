@@ -76,7 +76,7 @@ return array(
     'dashboard_view' => '',
 
     // 用来作为后台主页的菜单条目，由 `use_dashboard` 选项决定，菜单指的是 `menu` 选项
-    'home_page' => 'topics',
+    'home_page' => 'categories',
 
     // 右上角『返回主站』按钮的链接
     'back_to_site_path' => '/',
