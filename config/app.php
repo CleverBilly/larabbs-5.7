@@ -161,6 +161,8 @@ return [
         Overtrue\LaravelLang\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        App\Providers\EasySmsServiceProvider::class,
+        App\Providers\JpushServiceProvider::class,
 
         /*
          * Package Service Providers...
